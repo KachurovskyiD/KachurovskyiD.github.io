@@ -426,4 +426,137 @@ footer .footer-social ul li:hover .icon-vkontakte {
 /* .col- Extra small <576px */
 /* .col-sm- Small ≥576px*/
 /* .col-md- Medium ≥768px */
+@media (min-width: 769px) and (max-width: 992px) {
+  .main {
+    position: relative;
+  }
+  .main h1 {
+    font-family: 'BebasNeueBold', sans-serif;
+    font-size: 70px;
+    line-height: 75px;
+    letter-spacing: 5px;
+    margin-top: 170px;
+  }
+  .main h2 {
+    font-family: 'AvenirNextCyrRegular', sans-serif;
+    font-size: 17px;
+    line-height: 19px;
+    margin-top: 50px;
+  }
+  .main img.bg-woman {
+    position: absolute;
+    top: -29.2rem;
+    right: -65px;
+    max-height: 800px;
+  }
+  .gym {
+    height: 100vh;
+  }
+  .gym p {
+    margin-top: 60px;
+    text-align: justify;
+    line-height: 25px;
+  }
+  .gym .fotorama {
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  .feedback {
+    height: 100vh;
+    background-size: cover;
+    padding-top: 130px;
+  }
+  /* ===================================== */
+  footer {
+    height: 70vh;
+    /* Style the Un-order list by setting its list-style to none */
+    /* Style the list items inside the UL list, by setting its width, height and line-height 
+  and float them to left and set its border and border-radius.
+ */
+    /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+  to icons for glowing effect and use transition property for smooth transition effect. */
+    /*facebook*/
+    /*twitter*/
+    /* instagram */
+    /* vk */
+  }
+  footer .footer-social {
+    margin-top: 75px;
+    margin-left: 50px;
+  }
+  footer .footer-phone {
+    margin-top: 100px;
+  }
+  footer .footer-phone a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  footer .footer-phone p {
+    font-family: 'BebasNeueBold', sans-serif;
+    color: #fff;
+    font-size: 35px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+  footer h2 {
+    color: #fff;
+    font-size: 35px;
+    margin-left: 30px;
+  }
+  footer .footer-social ul {
+    list-style: none;
+  }
+  footer .footer-social ul li {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    margin: 0 12px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid #D8E2DC;
+    float: left;
+    transition: all 0.5s ease;
+  }
+  footer .footer-social ul li:hover.facebook {
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+  }
+  footer .footer-social ul li:hover .icon-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+  }
+  footer .footer-social ul li:hover.twitter {
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+  footer .footer-social ul li:hover .icon-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+  footer .footer-social ul li:hover.instagram {
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+  footer .footer-social ul li:hover .icon-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+  footer .footer-social ul li:hover.vkontakte {
+    border: 5px solid #dd4b39;
+    box-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+  }
+  footer .footer-social ul li:hover .icon-vkontakte {
+    color: #dd4b39;
+    text-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+  }
+}
 /* .col-lg-Large ≥992px */
