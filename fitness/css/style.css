@@ -449,7 +449,7 @@ footer .footer-social ul li:hover .icon-vkontakte {
     max-height: 650px;
   }
   .gym {
-    height: 100vh;
+    height: 70vh;
   }
   .gym p {
     margin-top: 60px;
@@ -461,13 +461,13 @@ footer .footer-social ul li:hover .icon-vkontakte {
     margin-top: 10px;
   }
   .feedback {
-    height: 100vh;
+    height: 70vh;
     background-size: cover;
     padding-top: 130px;
   }
   /* ===================================== */
   footer {
-    height: 70vh;
+    height: 50vh;
     /* Style the Un-order list by setting its list-style to none */
     /* Style the list items inside the UL list, by setting its width, height and line-height 
   and float them to left and set its border and border-radius.
