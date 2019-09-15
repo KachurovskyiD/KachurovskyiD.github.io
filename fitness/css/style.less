@@ -1,0 +1,554 @@
+/*=======================    Fonts    =========================*/
+@font-face {
+  font-family: 'AvenirNextCyrMedium';
+  src: url('../fonts/AvenirNextCyrMedium.eot');
+  src: url('../fonts/AvenirNextCyrMedium.eot') format('embedded-opentype'),
+    url('../fonts/AvenirNextCyrMedium.woff2') format('woff2'),
+    url('../fonts/AvenirNextCyrMedium.woff') format('woff'),
+    url('../fonts/AvenirNextCyrMedium.ttf') format('truetype'),
+    url('../fonts/AvenirNextCyrMedium.svg#AvenirNextCyrMedium') format('svg');
+}
+
+@font-face {
+  font-family: 'AvenirNextCyrRegular';
+  src: url('../fonts/AvenirNextCyrRegular.eot');
+  src: url('../fonts/AvenirNextCyrRegular.eot') format('embedded-opentype'),
+    url('../fonts/AvenirNextCyrRegular.woff2') format('woff2'),
+    url('../fonts/AvenirNextCyrRegular.woff') format('woff'),
+    url('../fonts/AvenirNextCyrRegular.ttf') format('truetype'),
+    url('../fonts/AvenirNextCyrRegular.svg#AvenirNextCyrRegular') format('svg');
+}
+
+@font-face {
+  font-family: 'BebasNeueBold';
+  src: url('../fonts/BebasNeueBold.eot');
+  src: url('../fonts/BebasNeueBold.eot') format('embedded-opentype'),
+    url('../fonts/BebasNeueBold.woff2') format('woff2'),
+    url('../fonts/BebasNeueBold.woff') format('woff'),
+    url('../fonts/BebasNeueBold.ttf') format('truetype'),
+    url('../fonts/BebasNeueBold.svg#BebasNeueBold') format('svg');
+}
+
+/*================    Reboot & Basic settings  ===============*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a:hover,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 20px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*=================    All     ====================*/
+
+/* .smooth:hover {
+  -moz-transition: color 0.2s 0.02s ease;
+  -o-transition: color 0.2s 0.02s ease;
+  -webkit-transition: color 0.2s 0.02s ease;
+} */
+
+
+/*================    Variables    ===============*/
+.reg() {
+  font-family: 'AvenirNextCyrRegular', sans-serif;
+}
+
+.med() {
+  font-family: 'AvenirNextCyrMedium', sans-serif;
+}
+
+.bold() {
+  font-family: 'BebasNeueBold', sans-serif;
+}
+
+@lgreen: #23dcb8;
+
+/*====================    First screen    ==============*/
+body {
+  .reg();
+}
+
+header {
+  color: #fff;
+  background-size: cover;
+  padding-top: 15px;
+  width: 100%;
+  height: 1080px;
+}
+
+.navbar {
+  .med();
+
+  &__logo {
+    margin-top: -20px;
+  }
+
+  &__description {
+    border-left: 2px solid #fff;
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-top: 39px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  &__phone {
+    display: inline-block;
+    margin-top: 39px;
+    color: #fff;
+    font-size: 20px;
+    .med();
+    line-height: 19px;
+    border-bottom: 1px #fff dotted;
+  }
+
+  &-social {
+    margin-top: 33px;
+    margin-left: 10px;
+
+    &__item {
+      display: inline-block;
+      margin-left: 7px;
+    }
+
+    &__link {
+      color: #fff;
+
+      & .icon {
+        font-size: 25px;
+
+      }
+    }
+  }
+}
+
+.main {
+  position: relative;
+
+  h1 {
+    .bold();
+    font-size: 100px;
+    line-height: 110px;
+    letter-spacing: 5px;
+    margin-top: 170px;
+  }
+
+  h2 {
+    .reg();
+    font-size: 27px;
+    line-height: 19px;
+    margin-top: 50px;
+  }
+
+  img.bg-woman {
+    position: absolute;
+    top: 15px;
+    right: -50px;
+    max-height: 920px;
+
+  }
+}
+
+.get-btn {
+  margin-top: 120px;
+  width: 320px;
+  height: 75px;
+  background-color: @lgreen;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 18px;
+  &:hover {
+    color: @lgreen;
+    background-color: transparent;
+    border: 2px #23dcb8 solid;
+  }
+}
+
+/*======================    Features    =====================*/
+.section-header {
+  .bold();
+  color: #212f3d;
+  font-size: 48px;
+  line-height: 19px;
+  text-transform: uppercase;
+  letter-spacing: 3.6;
+  margin-top: 120px;
+  text-align: center;
+}
+
+.features {
+  &__header {
+    position: relative;
+
+    & .parallax-dumbells {
+      position: absolute;
+      left: -620px;
+      top: -270px;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+
+  &__item {
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  &__img {
+    min-height: 90px;
+  }
+
+  &__title {
+    display: inline-block;
+    margin-top: 30px;
+    max-width: 150px;
+    text-align: center;
+  }
+}
+
+/*===================    Gym    ==================*/
+
+.gym {
+  height: 50vh;
+  padding-top: 50px;
+  margin-top: 125px;
+  background-image: url("../img/gym-bg.png");
+  background-size: cover;
+
+  .section-header {
+    margin-top: 15px;
+  }
+
+  h2 {
+    line-height: 50px;
+    border-bottom: 2px #23dcb8 solid;
+    border-spacing: 200px;
+  }
+
+  p {
+    margin-top: 60px;
+    text-align: justify;
+    line-height: 25px;
+  }
+
+  .fotorama {
+    margin-top: 10px;
+  }
+}
+
+/*================    Feedback    ===============*/
+.feedback {
+  height: 60vh;
+  background-size: cover;
+
+  h2 {
+    color: #fff;
+    font-size: 65px;
+  }
+
+  h3 {
+    margin-top: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  &-form {
+    margin-top: 70px;
+    text-align: center;
+
+    .form-input {
+      width: 361px;
+      height: 65px;
+      background-color: #eff4f3;
+      padding: 26px 26px 26px;
+      color: #6e837f;
+      .reg();
+      font-size: 16px;
+      line-height: 30px;
+      border-radius: 10px;
+      border: 1px #23dcb8 solid;
+    }
+
+    input {
+      margin-top: 10px;
+    }
+  }
+
+  .form-btn {
+    margin-top: 50px;
+    width: 320px;
+    height: 75px;
+    background-color: @lgreen;
+    border-radius: 50px;
+    text-shadow: 0 2px 21px rgba(239, 255, 252, 0.46);
+    color: #ffffff;
+    .reg();
+    font-size: 18px;
+    text-transform: uppercase;
+
+  }
+}
+
+/*==================    Footer    =================*/
+
+footer {
+  height: 67vh;
+
+  .footer-phone {
+    a {
+      font-size: 25px;
+      line-height: 35px;
+    }
+
+    p {
+      .bold();
+      color: #fff;
+      font-size: 52px;
+      padding-bottom: 20px;
+
+    }
+
+    margin-top: 100px;
+  }
+
+  background-image: url("../img/bg-footer.jpg");
+  background-size: cover;
+  text-align: center;
+
+  h2 {
+    color: #fff;
+    font-size: 55px;
+    margin-left: 300px;
+  }
+
+  .footer-social {
+    margin-top: 70px;
+    margin-left: 370px;
+
+  }
+
+  iframe {
+    margin-top: 70px;
+  }
+
+
+
+  /* Style the Un-order list by setting its list-style to none */
+  .footer-social ul {
+    list-style: none;
+  }
+
+  /* Style the list items inside the UL list, by setting its width, height and line-height 
+  and float them to left and set its border and border-radius.
+ */
+  .footer-social ul li {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid #D8E2DC;
+    float: left;
+    transition: all 0.5s ease;
+  }
+
+  /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+  to icons for glowing effect and use transition property for smooth transition effect. */
+  /*facebook*/
+  .footer-social ul li:hover.facebook {
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+  }
+
+  .footer-social ul li:hover .icon-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+  }
+
+  /*twitter*/
+  .footer-social ul li:hover.twitter {
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+
+  .footer-social ul li:hover .icon-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+
+  /* instagram */
+  .footer-social ul li:hover.instagram {
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+
+  .footer-social ul li:hover .icon-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+  }
+
+  /* vk */
+  .footer-social ul li:hover.vkontakte {
+    border: 5px solid #dd4b39;
+    box-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+  }
+
+  .footer-social ul li:hover .icon-vkontakte {
+    color: #dd4b39;
+    text-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+  }
+
+}
+
+/*===============    Modal window    ================*/
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &-content {
+    background-color: #fff;
+    position: fixed;
+    height: 250px;
+    width: 500px;
+    left: 40%;
+    top: 30%;
+    text-align: center;
+    border: 3px #23dcb8 solid;
+    padding: 50px;
+    line-height: 30px;
+    .med();
+  }
+
+  &-close {
+    position: absolute;
+    top: -27px;
+    left: 500px;
+    color: #fff;
+    background: transparent;
+    font-size: 30px;
+  }
+
+  &-header {
+    .bold();
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+}
+
+/*============    ПОДВАЛ    ===========*/
+
+/*============    	ВСПЛЫВАЮЩИЕ ОКНА    ===========*/
+
+/*============    	АДАПТИВ    ===========*/
+
+/* .col- Extra small <576px */
+@media(min-width:0px) and (max-width:480px) {}
+
+/* .col-sm- Small ≥576px*/
+@media(min-width:481px) and (max-width:768px) {}
+
+/* .col-md- Medium ≥768px */
+@media(min-width:769px) and (max-width:992px) {}
+
+/* .col-lg-Large ≥992px */
+@media(min-width:993px) and (max-width:1200px) {}
