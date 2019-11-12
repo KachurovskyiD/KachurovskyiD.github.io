@@ -24,6 +24,8 @@ git pull
 git merge
 
 git commit --amend #перезапись коммита
-git push --forse #перезапись принудительно всего
+git push --force #перезапись принудительно всего
+
+git revert #откат последнего коммита
 
 Hello Git!)
