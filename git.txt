@@ -24,5 +24,6 @@ git pull
 git merge
 
 git commit --amend #перезапись коммита
+git push --forse #перезапись принудительно всего
 
 Hello Git!)
