@@ -28,4 +28,9 @@ git push --force #перезапись принудительно всего
 
 git revert #откат последнего коммита
 
+git rebase #объединение коммитов
+
+git stash #прячет файлы
+git stash apply #возвращает спрятанные файлы
+
 Hello Git!)
