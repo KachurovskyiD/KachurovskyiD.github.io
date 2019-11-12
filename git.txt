@@ -1,26 +1,28 @@
 git status
 git add <file>
-git add .  # добавить все файлы
-git commit -m"ваше сообщение" #сделать коммит
+git add .  # РґРѕР±Р°РІРёС‚СЊ РІСЃРµ С„Р°Р№Р»С‹
+git commit -m"РІР°С€Рµ СЃРѕРѕР±С‰РµРЅРёРµ" #СЃРґРµР»Р°С‚СЊ РєРѕРјРјРёС‚
 
-git log #история коммитов
+git log #РёСЃС‚РѕСЂРёСЏ РєРѕРјРјРёС‚РѕРІ
 
 git branch
-git branch <branch-name> # создание новой ветки от текущей
-git checkout <branch-name> # переход на другую ветку
-git checkout -b <branch-name> #создание и переход на другую ветку
+git branch <branch-name> # СЃРѕР·РґР°РЅРёРµ РЅРѕРІРѕР№ РІРµС‚РєРё РѕС‚ С‚РµРєСѓС‰РµР№
+git checkout <branch-name> # РїРµСЂРµС…РѕРґ РЅР° РґСЂСѓРіСѓСЋ РІРµС‚РєСѓ
+git checkout -b <branch-name> #СЃРѕР·РґР°РЅРёРµ Рё РїРµСЂРµС…РѕРґ РЅР° РґСЂСѓРіСѓСЋ РІРµС‚РєСѓ
 
 
 git config -l
 git config user.name "<your name>"
 git config user.email "<email from github>"
 
-git remote #списко всех ссылок на удаленные репозитории
-git remote add origin <url of repository> # добавить ссылку на удаленный репозиторий
+git remote #СЃРїРёСЃРєРѕ РІСЃРµС… СЃСЃС‹Р»РѕРє РЅР° СѓРґР°Р»РµРЅРЅС‹Рµ СЂРµРїРѕР·РёС‚РѕСЂРёРё
+git remote add origin <url of repository> # РґРѕР±Р°РІРёС‚СЊ СЃСЃС‹Р»РєСѓ РЅР° СѓРґР°Р»РµРЅРЅС‹Р№ СЂРµРїРѕР·РёС‚РѕСЂРёР№
 
 git push
 git pull
 
 git merge
+
+git commit --amend #РїРµСЂРµР·Р°РїРёСЃСЊ РєРѕРјРјРёС‚Р°
 
 Hello Git!)
