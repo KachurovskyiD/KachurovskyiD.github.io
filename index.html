@@ -1,186 +1,312 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
+  <title>Denis Kachurovskyi - Personal Portfolio</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta property="og:title" content="Полезные ссылки для веб-разработчика" />
-  <meta property="og:description" content="Программы, сервисы и сайты, которые помогут в работе." />
-  <meta property="og:image" content="img/preview.jpg" />
-  <meta property="og:type" content="profile" />
-  <meta property="og:url" content="https://aislam23.github.io/links/" />
-  <title>Полезные ссылки для веб-разработчика</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css"> 
-
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="header__title">Полезные ссылки для веб-разработчика</h1>
-          <p class="header__text">Программы, сервисы и сайты, которые помогут в работе.</p>
+<body class="main_body">
+
+  <!-- Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="wrapper">
+
+    <!-- Scroll top -->
+    <a href="#poster" class="scroll-top" hidden>
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header__row">
+        <div class="header__logo">
+          <a href="#poster">Kachurovskyi.<span>D</span></a>
+        </div>
+        <div class="header__burger">
+          <input type="checkbox" id="check-menu">
+          <label for="check-menu" id="check-label"></label>
+          <div class="burger__line first"></div>
+          <div class="burger__line second"></div>
+          <div class="burger__line third"></div>
+          <div class="burger__line fourth"></div>
+        </div>
+        <nav class="header__menu main-menu">
+          <div class="menu__wrap">
+            <a href="#poster" class="menu__link">Home</a>
+            <a href="#about" class="menu__link">About me & My Skills</a>
+            <a href="#portfolio" class="menu__link">My Portfolio</a>
+            <a href="#contacts" class="menu__link">Contacts</a>
+            <div class="menu__social-group">
+              <a href="https://github.com/KachurovskyiD" class="fab fa-github" target="_blank"></a>
+              <a href="https://t.me/KachurovskyiD" class="fab fa-telegram-plane" target="_blank"></a>
+              <a href="https://www.instagram.com/mrkachurovskyi/" class="fab fa-instagram" target="_blank"></a>
+              <a href="https://www.linkedin.com/in/kachurovskyid/" class="fab fa-linkedin-in" target="_blank"></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Poster -->
+    <section id="poster" class="poster">
+      <div class="poster__content">
+        <div class="poster__figure">
+          <div class="poster__img">
+            <span class="poster__name">Denis Kachurovskyi</span>
+          </div>
+          <div class="poster__box"></div>
+        </div>
+        <div class="poster__text">
+          <div class="poster__title">
+            Welcome to my webpage!
+          </div>
+          <div class="poster__subtitle">
+            I'm Front-end
+            Developer
+          </div>
+          <div class="poster__skills">
+            Web Developer & Photographer
+          </div>
+          <div class="poster__buttons">
+            <a href="Kachurovskyi Denis CV.pdf" class="poster__button" download>Download my CV</a>
+            <a href="https://drive.google.com/file/d/1s17Km1UB4ThUxI2QQtTL3BVMj_ssT-WS/view?usp=sharing"
+              class="poster__button" target="_blank">View my CV</a>
+          </div>
+          <div class="poster__social-group">
+            <a href="https://github.com/KachurovskyiD" class="fab fa-github" target="_blank"></a>
+            <a href="https://t.me/KachurovskyiD" class="fab fa-telegram-plane" target="_blank"></a>
+            <a href="https://www.instagram.com/mrkachurovskyi/" class="fab fa-instagram" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/kachurovskyid/" class="fab fa-linkedin-in" target="_blank"></a>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </section>
 
-  <main class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <h3 class="section-title">Редакторы кода</h3>
-          <ol class="unstyled-list">
-
-            <li><a target="_blank" href="https://semantic-ui.com/">semantic</a> – Semantic UI — это фреймворк, который
-              помогает создавать красивые адаптивные макеты при помощи понятного человеку HTML. </li>
-            https://semantic-ui.com/
-            <li><a target="_blank" href="https://code.visualstudio.com/">VS Code</a> – мощный редактор (IDE) </li>
-            <li><a target="_blank" href="http://www.sublimetext.com/">Sublime text 3</a> – удобный и быстрый редактор
-              кода</li>
-            <li><a target="_blank" href="https://atom.io/">Atom</a> – крутой редактор от GitHub</li>
-            <li><a target="_blank" href="http://brackets.io/">Brackets</a> – подходит для начинающих</li>
-            <li><a target="_blank" href="https://notepad-plus-plus.org/">Notepad ++ </a>– легендарный редактор</li>
-          </ol>
-          <h3 class="section-title">Песочницы для кода</h3>
-          <ol class="unstyled-list">
-            <li><a target="_blank" href="https://jsfiddle.net/">JS fiddle</a> – Песочница для JavaScript </li>
-            <li><a target="_blank" href="http://www.codepen.io/">CodePen</a> – Песочница для HTML, CSS о JS</li>
-            <li><a target="_blank" href="http://cssdeck.com/">CSS Desk</a> – Еще одна песочница</li>
-          </ol>
-          <h3 class="section-title">Работа с изображениями</h3>
-          <ol class="unstyled-list">
-            <li><a target="_blank" href="https://compressor.io/">Сompressor</a> – Сжимает JPG и PNG </li>
-            <li><a target="_blank" href="https://tinypng.com/">Tiny png</a> – Сжимает изображения. Есть API. </li>
-            <li><a target="_blank" href="https://www.vectorizer.io/">Vectorizer</a> – Из растрового в векторное
-              изображение </li>
-            <li><a target="_blank" href="https://www.online-convert.com/">Online-Convert</a> – Бесплатный конвертер из
-              растрового в векторное изображение </li>
-          </ol>
-          <h3 class="section-title">Шпаргалки</h3>
-          <ol class="unstyled-list">
-            <li><a target="_blank" href="http://yoksel.github.io/flex-cheatsheet/">FlexBox</a> – шпаргалка по Flexbox
-            </li>
-            <li><a target="_blank" href="https://html5book.ru">Html5book</a> – шпаргалка по HTML, CSS, JavaScript и
-              jQuery</li>
-            <li><a target="_blank" href="http://htmlbook.ru/css-cheat-sheet">HTML Book</a> – шпаргалка по HTML и CSS
-            </li>
-            <li><a target="_blank" href="https://adam-marsden.co.uk/css-cheat-sheet">CSS Cheat Sheet</a> – шпаргалка по
-              CSS</li>
-            <li><a target="_blank" href="http://jquery.page2page.ru/">jQuery page2page</a> – шпаргалка по jQuery</li>
-            <li><a target="_blank" href="https://docs.emmet.io/cheat-sheet/">Emmet Cheat Sheet</a> – шпаргалка по Emmet
-            </li>
-            <li><a target="_blank" href="https://webref.ru/">WebReference</a> - ещё одна шпаргалка по HTML5 и CSS3.
-              Также данный сайт опубликовал свои шпаргалки в виде приложений на Google Play.</li>
-            <li><a target="_blank" href="https://easings.net/ru">easings</a> - Шпаргалка функций плавности</li>
-          </ol>
-          <h3 class="section-title">Генераторы CSS</h3>
-          <ol class="unstyled-list">
-            <li><a target="_blank" href="https://css3gen.com/">CSS3gen</a> – CSS генератор кнопок, градиентов,
-              бордеров,теней трансформации, фона, анимаций</li>
-          </ol>
+    <!-- About -->
+    <section id="about" class="about _scr-item">
+      <div class="container">
+        <div class="about__heading">
+          <div class="about__title title">Some words about me...</div>
+          <div class="about__subtitle subtitle">About me</div>
         </div>
-        <!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <h3 class="section-title">Шрифты</h3>
-          <ol class="unstyled-list">
-            <li><a target="_blank" href="http://fonts.google.com/">Google Fonts</a> – Веб-шрифты от Google</li>
-            <li><a target="_blank" href="https://transfonter.org/">Transfonter</a> – Конвертер веб-шрифтов</li>
-            <li><a target="_blank" href="http://www.fontov.net/">Фонтов.нет</a> – Подбор шрифта по фразе</li>
-            <li><a target="_blank" href="http://fonts4web.ru/">Fonts4web</a> – Шрифты для сайтов</li>
-          </ol>
-          <h3 class="section-title">Проверка кода</h3>
-          <ol class="unstyled-list">
-            <li><a target="_blank" href="https://caniuse.com/">Can I Use</a> – Кроссбраузерность кода</li>
-            <li><a target="_blank" href="http://validator.w3.org/">Validator W3</a> – Валидность HTML-кода</li>
-            <li><a target="_blank" href="https://developers.google.com/speed/pagespeed/insights">PageSpeed Insights</a>
-              – Проверка оптимизации страницы</li>
-            <li><a target="_blank" href="https://search.google.com/test/mobile-friendly">Mobile Friendly</a> –
-              Оптимизирована ли ваша страница для мобильных устройств </li>
-            <li><a target="_blank" href="http://www.siteliner.com">Find Dublicate Content on your site</a> – Проверка
-              уникальности текста на сайте</li>
-          </ol>
-          <h3 class="section-title">Лайфхаки для верстальщика</h3>
-          <ol class="unstyled-list">
-            <li><a target="_blank" href="http://howtocenterincss.com/">How To Center in CSS</a> – центрируйте всё</li>
-            <li><a target="_blank" href="https://codyhouse.co/">CodeHouse</a> – крутые подборки готовых решений на CSS и
-              jQuery без плагинов</li>
-            <li><a target="_blank" href="https://learngitbranching.js.org/">Learn Git Branching</a> – интерактивный
-              учебник по Git</li>
-          </ol>
-          <h3 class="section-title">Полезные jQuery плагины</h3>
-          <ol class="unstyled-list">
-            <li><a target="_blank" href="http://kenwheeler.github.io/slick/">Slick</a> – Адаптивный слайдер</li>
-            <li><a target="_blank" href="https://owlcarousel2.github.io/OwlCarousel2/">Owl Carousel</a> – Адаптивный
-              слайдер-карусель</li>
-            <li><a target="_blank" href="http://iamceege.github.io/tooltipster/">Tooltipster</a> – Создание всплывающих
-              подсказок</li>
-            <li><a target="_blank" href="https://flatpickr.js.org/examples/">Flatpickr</a> – Всплывающие окна с выбором
-              даты</li>
-            <li><a target="_blank" href="https://vodkabears.github.io/vide/">Vide</a> – Видеофон для сайта</li>
-            <li><a target="_blank" href="https://plugins.jquery.com/maskedinput/">Masked Input</a> – Плагин маски ввода
-              для input</li>
-          </ol>
+        <div class="about__row">
+          <div class="about__img">
+            <picture>
+              <source srcset="img/about-skills.webp" type="image/webp"><img src="img/about-skills.jpg" alt="skills">
+            </picture>
+          </div>
+          <div class="about__counter counter">
+            <div class="about__description">Hi, I'm <span>Denis Kachurovskyi</span>, 26 years old Front-end developer &
+              Photographer. Based in Zaporizhzhya, Ukraine.</div>
+            <div class="counter__wrapper">
+              <div class="counter__skills">My Skills</div>
+              <div class="counter__item">
+                <div class="counter__text">
+                  <div class="counter__label">HTML5/CSS3</div>
+                  <div class="counter__value-group">
+                    <div data-num="95" class="counter__value number">0</div>
+                    <span>%</span>
+                  </div>
+                </div>
+                <div class="counter__progress">
+                  <div class="progress-value progress-value-1"></div>
+                </div>
+              </div>
+              <div class="counter__item">
+                <div class="counter__text">
+                  <div class="counter__label">JavaScript</div>
+                  <div class="counter__value-group">
+                    <div data-num="80" class="counter__value number">0</div>
+                    <span>%</span>
+                  </div>
+                </div>
+                <div class="counter__progress">
+                  <div class="progress-value progress-value-2"></div>
+                </div>
+              </div>
+              <div class="counter__item">
+                <div class="counter__text">
+                  <div class="counter__label">JQuery</div>
+                  <div class="counter__value-group">
+                    <div data-num="85" class="counter__value number">0</div>
+                    <span>%</span>
+                  </div>
+                </div>
+                <div class="counter__progress">
+                  <div class="progress-value progress-value-3"></div>
+                </div>
+              </div>
+              <div class="counter__item">
+                <div class="counter__text">
+                  <div class="counter__label">Photoshop</div>
+                  <div class="counter__value-group">
+                    <div data-num="90" class="counter__value number">0</div>
+                    <span>%</span>
+                  </div>
+                </div>
+                <div class="counter__progress">
+                  <div class="progress-value progress-value-4"></div>
+                </div>
+              </div>
+              <div class="counter__item">
+                <div class="counter__text">
+                  <div class="counter__label">React</div>
+                  <div class="counter__value-group">
+                    <div data-num="65" class="counter__value number">0</div>
+                    <span>%</span>
+                  </div>
+                </div>
+                <div class="counter__progress">
+                  <div class="progress-value progress-value-5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <h3 class="section-title">Иконки и графика</h3>
-          <ol class="unstyled-list">
-            <li><a target="_blank" href="https://www.flaticon.com/">Flaticons</a> – бесплатные векторные иконки</li>
-            <li><a target="_blank" href="https://seeklogo.com/">Seeklogo</a> – векторные логотипы компаний</li>
-            <li><a target="_blank" href="https://svgporn.com/">SVG Porn</a> – векторные логотипы </li>
-            <li><a target="_blank" href="http://toplogos.ru/">TOP Logos</a> – логотипы компаний (русские)</li>
-            <li><a target="_blank" href="http://fontawesome.com/">Font Awesome</a> – иконочный шрифт + SVG</li>
-            <li><a target="_blank" href="https://utf8-icons.com/">UTF-8 Icons</a> – иконки на utf-8</li>
-            <li><a target="_blank" href="https://fontello.com/">Fontello</a> – шрифтовые иконки. Шрифты генерируются на
-              ходу из выбранных иконок, доступны иконки из 14 популярных шрифтов.</li>
-            <li><a target="_blank" href="https://iconmonstr.com/">IconMonster</a> – бесплатные векторные иконки</li>
-            <li><a target="_blank" href="https://icomoon.io/app/#/select">IcoMoon</a> – векторные иконки</li>
-          </ol>
-          <h3 class="section-title">Работа с дизайн-макетами</h3>
-          <ol class="unstyled-list">
-            <li><a target="_blank" href="https://avocode.com/">Avocode</a> – платформа для работы макетами для
-              верстальщиков (PSD, Sketch и др)</li>
-            <li><a target="_blank" href="https://assets.adobe.com/">Adobe Assets</a> – работа с PSD-макетами прямо в
-              браузере. Экспорт кода.</li>
-            <li><a target="_blank" href="https://zeplin.io/">Zeplin</a> – работа с дизайн-макетами в браузере. Есть
-              экспорт кода.</li>
-            <li><a target="_blank" href="https://psdetch.com/">PSD Tech</a> – бесплатный аналог Avocode.</li>
-            <li><a target="_blank" href="https://www.markupeasy.ru/">Markupeasy</a> – бесплатный аналог Avocode.</li>
-          </ol>
-          <h3 class="section-title">Библиотеки с анимациями</h3>
-          <ol class="unstyled-list">
-            <li><a target="_blank" href="https://daneden.github.io/animate.css/">Animate.css</a> – библиотека CSS
-              анимаций</li>
-            <li><a target="_blank" href="https://www.minimamente.com/example/magic_animations/">Magic</a> –
-              кроссбраузерные анимации</li>
-            <li><a target="_blank" href="http://shakrmedia.github.io/tuesday/">It's Tuesday.</a> – простые и приятные
-              CSS анимации</li>
-          </ol>
-          <h3 class="section-title">Прочее</h3>
-          <ol class="unstyled-list">
-            <li><a target="_blank" href="https://coverr.co/">Coverr</a> – Короткие видео для фона на сайт</li>
-            <li><a target="_blank" href="https://www.toptal.com/designers/subtlepatterns/">Subte Patterns</a> – Фоны для
-              сайта</li>
-            <li><a target="_blank" href="https://tools.yaroshenko.by/utm.php">Генератор UTM-меток</a></li>
-            <li><a target="_blank" href="http://underscores.me/">Underscores</a> - Пустая тема для Wordpress</li>
-            <li><a target="_blank" href="https://www.minifier.org/">Minify</a> - CSS и JS минификатор</li>
-            <li><a target="_blank" href="https://unminify.com/">Unminify</a> - Анминификатор для HTML, CSS, JS</li>
-            <h3 class="section-title">Обучающая литература</h3>
-            <ol class="unstyled-list">
-              <li><a target="_blank" rel="noopener"
-                  href="https://github.com/azat-io/you-dont-know-js-ru/blob/master/README.md">You Don't Know JS</a> –
-                перевод серии книг по JavaScript.</li>
-            </ol>
-        </div>
-        <!-- /.col-lg-4 -->
       </div>
-    </div>
-  </main>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+      <div class="portfolio__heading">
+        <div class="portfolio__title title">Recent projects</div>
+        <div class="portfolio__subtitle subtitle">Portfolio</div>
+      </div>
+      <div class="portfolio__row">
+        <div class="portfolio__item portfolio__item-1">
+          <div class="portfolio__figure">
+            <picture>
+              <source srcset="img/portfolio-img-01.webp" type="image/webp"><img src="img/portfolio-img-01.jpg"
+                alt="portfolio"></picture>
+          </div>
+          <div class="portfolio__text">
+            <div class="portfolio__text-title">CityScape</div>
+            <div class="portfolio__text-subtitle">- Design agency</div>
+            <a href="https://kachurovskyid.github.io/cityscape.github.io/" class="portfolio__button"
+              target="_blank">View Demo
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="https://github.com/KachurovskyiD/CityScape" class="portfolio__button" target="_blank">View on
+              GitHub
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <div class="portfolio__caption"></div>
+        </div>
+        <div class="portfolio__item portfolio__item-2">
+          <div class="portfolio__figure">
+            <picture>
+              <source srcset="img/portfolio-img-02.webp" type="image/webp"><img src="img/portfolio-img-02.jpg"
+                alt="portfolio"></picture>
+          </div>
+          <div class="portfolio__text">
+            <div class="portfolio__text-title">SeaFood</div>
+            <div class="portfolio__text-subtitle">- Seafood restaurant</div>
+            <a href="https://kachurovskyid.github.io/seafood.github.io/" class="portfolio__button" target="_blank">View
+              Demo
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="https://github.com/KachurovskyiD/SeaFood" class="portfolio__button" target="_blank">View on GitHub
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <div class="portfolio__caption"></div>
+        </div>
+        <div class="portfolio__item portfolio__item-3">
+          <div class="portfolio__figure">
+            <picture>
+              <source srcset="img/portfolio-img-03.webp" type="image/webp"><img src="img/portfolio-img-03.jpg"
+                alt="portfolio"></picture>
+          </div>
+          <div class="portfolio__text">
+            <div class="portfolio__text-title ">AeroMint Studio</div>
+            <div class="portfolio__text-subtitle">- Dance studio</div>
+            <a href="https://kachurovskyid.github.io/aeromint.github.io/" class="portfolio__button" target="_blank">View
+              Demo
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="https://github.com/KachurovskyiD/AeroMint" class="portfolio__button" target="_blank">View on GitHub
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <div class="portfolio__caption"></div>
+        </div>
+        <div class="portfolio__item portfolio__item-4">
+          <div class="portfolio__figure">
+            <picture>
+              <source srcset="img/portfolio-img-04.webp" type="image/webp"><img src="img/portfolio-img-04.jpg"
+                alt="portfolio"></picture>
+          </div>
+          <div class="portfolio__text">
+            <div class="portfolio__text-title ">Coffee House</div>
+            <div class="portfolio__text-subtitle">- Cafe</div>
+            <a href="https://kachurovskyid.github.io/coffeehouse.github.io/" class="portfolio__button"
+              target="_blank">View Demo
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a href="https://github.com/KachurovskyiD/CoffeeHouse" class="portfolio__button" target="_blank">View on
+              GitHub
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <div class="portfolio__caption"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts -->
+    <section id="contacts" class="contacts">
+      <div class="container">
+        <div class="contacts__heading">
+          <div class="contacts__title title">Get In Touch</div>
+          <div class="contacts__subtitle subtitle">Contact Me</div>
+        </div>
+        <div class="contacts__row">
+          <div class="contacts__wrapper">
+            <div class="contacts__item">
+              <i class="fab fa-github"></i>
+              <a href="https://github.com/KachurovskyiD" class="contacts__link" target="_blank">@KachurovskyiD</a>
+            </div>
+            <div class="contacts__item">
+              <i class="fab fa-telegram-plane"></i>
+              <a href="https://t.me/KachurovskyiD" class="contacts__link" target="_blank">@KachurovskyiD</a>
+            </div>
+            <div class="contacts__item">
+              <i class="fab fa-instagram"></i>
+              <a href="https://www.instagram.com/mrkachurovskyi/" class="contacts__link"
+                target="_blank">@mrkachurovskyi</a>
+            </div>
+            <div class="contacts__item">
+              <i class="fab fa-linkedin-in"></i>
+              <a href="https://www.linkedin.com/in/kachurovskyid/" class="contacts__link"
+                target="_blank">@kachurovskyid</a>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__footer">© 2021 All rights reserved. Kachurovskyi Denis.<br><a
+            href="mailto:kachurovskyi.d@gmail.com">kachurovskyi.d@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Main script -->
+  <script src="js/script.min.js"></script>
+
 </body>
 
 </html>
